@@ -287,3 +287,114 @@ main .about-container .employee-team-container {
 .employee-team-container a:hover {
   background-color: #CDCDCD;
 }
+/*CONTACT*/
+main .contact-container{
+  margin-bottom: 50px;
+}
+main .contact-container h2{
+  margin: 20px 0px 0px 0px;
+  padding: 32px 16px 32px 0px;
+  font-size: 22px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+main .contact-container .form-container{
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #E9E9E9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-container p{
+  line-height: 25px;
+  font-size: 15px;
+  margin-bottom: 17px;
+}
+
+.form-container form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-bottom:
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  margin-bottom: 16px;
+  outline: none;
+  font-size: 17px;
+  border: 2px solid #C5C5C5;
+}
+
+.form-container textarea {
+  resize: none;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  border: 2px solid #C5C5C5;
+  padding: 10px 0px 10px 10px;
+  margin-bottom: 16px;
+}
+
+.form-container input:focus {
+  border: 2px solid black;
+  border-radius: 2px;
+}
+.form-container textarea:focus {
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.form-container button {
+  width: 50%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form-container button:hover {
+  cursor: pointer;
+  background-color: #CDCDCD;
+  color: black;
+}
+
+/*MAP IMAGE*/
+
+.wrapper .last-map-image{
+  width: 100%;
+  height: 180px;
+  background-image: url("images/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  height: 85px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-family: arial;
+}
+
+footer p{
+  line-height: 85px;
+  font-size: 17px;
+}
+footer p a{
+  color: white;
+  text-decoration: underline;
+}
+footer p a:hover{
+  color: green;
+}
