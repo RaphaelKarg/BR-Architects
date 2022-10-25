@@ -135,7 +135,6 @@ header .brand-name{
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 2px;
-
 }
 
 header .brand-name span {
@@ -148,9 +147,45 @@ header .brand-name:hover {
   background-color: lightgray;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) { /*FOR TABLETS*/
+  header .brand-name{
+    font-size: 17px;
+  }
+
   header nav {
-    display: none;
+    display: block;
+    margin-right: 20px;
+  }
+  nav ul {
+    width: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+
+  nav ul li{
+    display: inline-block;
+    float: left;
+  }
+
+  nav ul li a{
+    color: black;
+    padding: 10px 15px 10px 15px;
+  }
+  nav ul li a:hover {
+    background-color: lightgray;
+  }
+}
+@media only screen and (min-width: 1000px) { /*FOR PC*/
+  header .brand-name{
+    font-size: 11px;
+  }
+  header .brand-name span {
+    font-size: 11px;
+  }
+  nav ul {
+    font-size: 11px;
   }
 }
 /**** MAIN ****/
@@ -180,28 +215,60 @@ main .brand-image h1{
   font-family: 'Roboto Mono', monospace;
   background-color: rgba(0, 0, 0, 0.5);
 }
+main .brand-image span {
+  display: none;
+}
 
 main .wrapper{
   width: calc(100% - 60px);
   padding: 8px 30px 8px 30px;
 }
 
+@media only screen and (min-width: 768px) { /*FOR TABLETS */
+  main .brand-image {
+    height: 32.5vh
+  }
+  main .brand-image h1 {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  main .brand-image span{
+    display: block;
+    margin-left: 10px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 35px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 1000px) { /*FOR PC*/
+  main .brand-image {
+    width: 1100px;
+    height: 70vh;
+    margin: 55px auto 0px auto;
+  }
+  main .wrapper{
+    margin: 0 auto 5px auto;
+    width: 1100px;
+    padding: 0;
+  }
+}
+
 /*PROJECTS*/
 main .projects-container h2{
-  margin: 20px 0px 30px 0px;
-  padding: 32px 16px 25px 0px;
+  padding: 65px 0px 25px 0px;
   border-bottom: 1px solid #E9E9E9;
   font-size: 22px;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
 }
-main  .flexbox-container{
+main .flexbox-container{
   margin-top: 50px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content:
 }
 
 main .projects-container .project-img {
@@ -235,10 +302,32 @@ main .projects-container .project-img p{
   font-family: arial;
 }
 
+@media only screen and (min-width: 768px) { /*FOR TABLETS*/
+  main .flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  main .projects-container .project-img {
+    width: 49%;
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 1000px) { /*FOR PC*/
+  main .projects-container h2{
+    font-size: 14px;
+  }
+  main .projects-container .project-img {
+    width: 24%;
+    height: 200px;
+  }
+}
+
 /*ABOUT*/
 main .about-container h2{
-  margin: 20px 0px 0px 0px;
-  padding: 32px 16px 32px 0px;
+  padding: 65px 0px 25px 0px;
   font-size: 22px;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
@@ -296,13 +385,49 @@ main .about-container .employee-team-container {
 .employee-team-container a:hover {
   background-color: #CDCDCD;
 }
+@media only screen and (min-width: 768px) { /*FOR TABLETS*/
+  main .about-container .employee-team-container{
+    width: 49%;
+  }
+}
+@media only screen and (min-width: 1000px) { /*FOR PC*/
+  main .about-container h2{
+    font-size: 14px;
+  }
+
+  main .about-container p.about-info{
+    line-height: 20px;
+    font-size: 11px;
+  }
+
+  main .about-container .employee-team-container{
+    width: 24%;
+  }
+
+  .employee-team-container img{
+    height: 180px;
+  }
+
+  .employee-team-container h1 {
+    font-size: 16px;
+    padding: 17px 0px 17px 0px;
+  }
+
+  .employee-team-container .first-p {
+    font-size: 11px;
+  }
+
+  .employee-team-container .second-p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
 /*CONTACT*/
 main .contact-container{
   margin-bottom: 50px;
 }
 main .contact-container h2{
-  margin: 20px 0px 0px 0px;
-  padding: 32px 16px 32px 0px;
+  padding: 65px 0px 25px 0px;
   font-size: 22px;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
@@ -375,6 +500,31 @@ main .contact-container .form-container{
   color: black;
 }
 
+@media only screen and (min-width: 768px) {/*FOR TABLETS*/
+  .form-container button {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 1000px) {/*FOR PC*/
+  main .contact-container h2{
+    font-size: 14px;
+  }
+  .form-container p{
+    line-height: 20px;
+    font-size: 11px;
+  }
+  .form-container input {
+    font-size: 11px;
+  }
+  .form-container textarea {
+    font-size: 11px;
+  }
+  .form-container button {
+    width: 12.5%;
+    font-size: 11px;
+  }
+}
+
 /*MAP IMAGE*/
 
 .wrapper .last-map-image{
@@ -386,6 +536,16 @@ main .contact-container .form-container{
   background-size: cover;
 }
 
+@media only screen and (min-width: 768px) {/*FOR TABLETS*/
+  .wrapper .last-map-image {
+    height: 480px;
+  }
+}
+@media only screen and (min-width: 1000px) {/*FOR PC*/
+  .wrapper .last-map-image {
+    height: 640px;
+  }
+}
 /*FOOTER*/
 footer {
   width: 100%;
@@ -406,4 +566,14 @@ footer p a{
 }
 footer p a:hover{
   color: green;
+}
+@media only screen and (min-width: 1000px) {/*FOR PC*/
+  footer {
+    height: 65px;
+
+  }
+  footer p{
+    line-height: 65px;
+    font-size: 12px;
+  }
 }
